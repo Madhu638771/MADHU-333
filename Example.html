@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 290px;
+        }
+
+        div {
+            padding: 10px;
+            height: 600px;
+            width: 350px;
+            margin: 50px auto;
+            box-shadow: 5px 5px 10px;
+            border-radius: 15px;
+        }
+        
+
+        button {
+            background-color: blue;
+            color: white;
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .radio-group label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Sign up</h1>
+        <form id="signup">
+            Name:<br>
+            <input type="text" id="Name"><br><br>
+
+            Email:<br>
+            <input type="text" id="Email"><br><br>
+
+            Password:<br>
+            <input type="password" id="Password"><br><br>
+
+            Confirm Password:<br>
+            <input type="password" id="ConfirmPassword"><br><br>
+
+            <label for="year">Year of study:</label><br>
+            <select name="year" id="year">
+                <option value="First year">First year</option>
+                <option value="Second year">Second year</option>
+                <option value="Third year">Third year</option>
+            </select><br><br>
+
+            Gender:<br>
+            
+                <label><input type="radio" id="male" name="gender" value="male"> Male</label>
+                <label><input type="radio" id="female" name="gender" value="female"> Female</label>
+                <label><input type="radio" id="other" name="gender" value="other"> Other</label><br><br>
+
+            Phone number:<br>
+            <input type="text" id="Phone number"><br><br>
+
+            
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
